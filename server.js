@@ -52,6 +52,13 @@ app.get('/bad', (request, response) => {
     });
 });
 
+app.get('/aleks', (req, res) => {
+    res.render('aleks.hbs', {
+        name: 'aleksy',
+        role: 'chona'
+    });
+});
+
 app.listen(port, () => {
     console.log(`server running on port ${port}`);
 });
